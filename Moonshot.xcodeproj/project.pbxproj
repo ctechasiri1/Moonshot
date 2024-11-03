@@ -16,6 +16,7 @@
 		51D656792CD75B570077E47A /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 51D656782CD75B570077E47A /* missions.json */; };
 		51D6567B2CD75B850077E47A /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D6567A2CD75B850077E47A /* Mission.swift */; };
 		51D6567D2CD75B9E0077E47A /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D6567C2CD75B9E0077E47A /* Bundle-Decodable.swift */; };
+		51D6567F2CD7629F0077E47A /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D6567E2CD7629F0077E47A /* Color-Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		51D656782CD75B570077E47A /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		51D6567A2CD75B850077E47A /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		51D6567C2CD75B9E0077E47A /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		51D6567E2CD7629F0077E47A /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +65,12 @@
 			children = (
 				516DE11B2CD332D6002CFC8F /* MoonshotApp.swift */,
 				516DE11D2CD332D6002CFC8F /* ContentView.swift */,
-				5181F63B2CD74FD500C3B5EA /* astronauts.json */,
+				51D6567E2CD7629F0077E47A /* Color-Theme.swift */,
 				51394C9F2CD750F700B4C0EA /* Astronaut.swift */,
 				51D6567C2CD75B9E0077E47A /* Bundle-Decodable.swift */,
-				51D656782CD75B570077E47A /* missions.json */,
 				51D6567A2CD75B850077E47A /* Mission.swift */,
+				5181F63B2CD74FD500C3B5EA /* astronauts.json */,
+				51D656782CD75B570077E47A /* missions.json */,
 				516DE11F2CD332D9002CFC8F /* Assets.xcassets */,
 				516DE1212CD332D9002CFC8F /* Preview Content */,
 			);
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				516DE11E2CD332D6002CFC8F /* ContentView.swift in Sources */,
+				51D6567F2CD7629F0077E47A /* Color-Theme.swift in Sources */,
 				51D6567D2CD75B9E0077E47A /* Bundle-Decodable.swift in Sources */,
 				51394CA02CD750F700B4C0EA /* Astronaut.swift in Sources */,
 				516DE11C2CD332D6002CFC8F /* MoonshotApp.swift in Sources */,
