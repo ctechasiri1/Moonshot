@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AstronautScrollView: View {
-
+    
     let crew: [CrewMember]
     
     var body: some View {
