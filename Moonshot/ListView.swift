@@ -2,45 +2,17 @@
 //  ListView.swift
 //  Moonshot
 //
-//  Created by Chiraphat Techasiri on 11/6/24.
+//  Created by Chiraphat Techasiri on 11/25/24.
 //
 
 import SwiftUI
 
 struct ListView: View {
-    
-    let astronauts: [String: Astronaut]
-    let missions: [Mission]
-    
     var body: some View {
-        List {
-            ForEach(missions) { mission in
-                NavigationLink {
-                    MissionView(mission: mission, astronauts: astronauts)
-                } label: {
-                    HStack {
-                        Image(mission.image)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 50, height: 50)
-                        
-                        VStack {
-                            Text(mission.displayName)
-                                .font(.headline)
-                            
-                            Text(mission.formattedLaunchDate)
-                                .font(.caption)
-                        }
-                    }
-                }
-            }
-        }
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
-    let missions: [Mission] = Bundle.main.decode("missions.json")
-    
-    return ListView(astronauts: astronauts, missions: missions)
+    ListView()
 }
