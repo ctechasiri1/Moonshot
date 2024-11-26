@@ -2,7 +2,7 @@
 //  AstronautScrollView.swift
 //  Moonshot
 //
-//  Created by Chiraphat Techasiri on 11/4/24.
+//  Created by Chiraphat Techasiri on 11/25/24.
 //
 
 import SwiftUI
@@ -15,9 +15,7 @@ struct AstronautScrollView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(crew, id: \.role) { crewMember in
-                    NavigationLink {
-                        AstronautView(astronaut: crewMember.astronaut)
-                    } label: {
+                    NavigationLink(value: crewMember) {
                         HStack {
                             Image(crewMember.astronaut.id)
                                 .resizable()
@@ -41,8 +39,12 @@ struct AstronautScrollView: View {
                 }
             }
         }
+        .navigationDestination(for: CrewMember.self) { crewMember in
+            AstronautView(astronaut: crewMember.astronaut)
+        }
     }
 }
+
 
 #Preview {
     //In order for this to work you need to connect both astronaut and missions file together and return the information you want which is a crew member
